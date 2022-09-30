@@ -55,7 +55,7 @@ const PasswordForm = (props) => {
                     className="container mx-auto w-80 relative font-mono text-lg"
                     onSubmit={submitHandler}
                     >
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between mb-7">
                         <input 
                             type="number"
                             id="passwordLength"
@@ -63,46 +63,46 @@ const PasswordForm = (props) => {
                             max={MAX}
                             value={passwordLength}
                             onChange={passwordLengthHandler}
-
                         />
                         <label htmlFor="passwordLength" className="text-white">Password Length</label>
                     </div>
 
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between items-center">
                         <input
                             type='checkbox'
                             id="upperCase"
-                            onClick={firstNameHandler}    
+                            onClick={firstNameHandler}   
+                            className="text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" 
                         />
                         <label htmlFor="upperCase" className="text-left ml-5 text-white">Include Upper Case Letters</label>
                     </div>
 
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between items-center">
                         <input
                             type='checkbox'
                             id="lowerCase"
-                            onClick={lastNameHandler}
-                            
+                            onClick={lastNameHandler}  
+                            className="text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"   
                         />
                         <label htmlFor="lowerCase" className="text-left ml-5 text-white">Include Lower Case Letters</label>
                     </div>
 
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between items-center">
                         <input
                             type='checkbox'
                             id="numbers"
                             onClick={numberHandler}
-                          
+                            className="text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                         />
                         <label htmlFor="numbers" className="text-left ml-5 text-white">Include Numbers</label>
                     </div>
 
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between items-center">
                         <input
                             type='checkbox'
                             id="symbols"
                             onClick={symbolHandler}
-                            
+                            className="text-orange-500 bg-gray-100 rounded border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                         />
                         <label htmlFor="symbols" className="text-left ml-5 text-white">Include Symbols</label>
                     </div>

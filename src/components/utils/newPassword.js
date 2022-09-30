@@ -5,7 +5,7 @@ export const newPassword = passwordLimits => {
         includeNumbers: [passwordLimits.includeNumbers, '0123456789'],
         includeSymbols: [passwordLimits.includeSymbols, '!@#$%^&*()_+~`|}{[]\:;?></-=']
     }
-
+    
     let listOfCharacters = ''
 
     for (let isTrue in formInputs) {
