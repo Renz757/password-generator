@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import CopyPassword from './components/CopyPassword';
+import PasswordForm from './components/passwordForm';
+import {newPassword} from './components/utils/newPassword.js'
+
 
 function App() {
+
+  const [password, setPassword] = useState('')
+
+  const saveFormDataHandler = (data) => {
+    const formData = {
+      ...data,
+      id: Math.random().toString()
+    }
+    setPassword(newPassword(formData))
+  }
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App h-screen mx-auto bg-zinc-700 relative">
+      <div className='bg-emerald-700 relative top-52 w-9/12 mx-auto p-7'>
+        <CopyPassword password={password}/> 
+        <PasswordForm onSaveFormData={saveFormDataHandler}/>
+      </div>
     </div>
   );
 }
