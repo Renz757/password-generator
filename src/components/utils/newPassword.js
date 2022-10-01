@@ -3,7 +3,7 @@ export const newPassword = passwordLimits => {
         upperCase: [passwordLimits.upperCase, 'abcdefghijklmnopqrstuvwxyz'.toUpperCase()],
         lowerCase: [passwordLimits.lowerCase, 'abcdefghijklmnopqrstuvwxyz'],
         includeNumbers: [passwordLimits.includeNumbers, '0123456789'],
-        includeSymbols: [passwordLimits.includeSymbols, '!@#$%^&*()_+~`|}{[]\:;?></-=']
+        includeSymbols: [passwordLimits.includeSymbols, '!@#$%^&*()_+~`|}{[]:;?></-=']
     }
     
     let listOfCharacters = ''
