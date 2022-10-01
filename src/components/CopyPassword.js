@@ -12,8 +12,8 @@ const CopyPassword = (props) => {
         <>
             <div className="container mx-auto text-center font-mono">
                 <h1 className="text-5xl mb-7 text-white">Password Generator</h1>
-                <div className="container mx-auto w-80 flex justify-between m-4">
-                    <p className="bg-slate-400 p-4 grow text-left mr-2 rounded">{props.password}</p>
+                <div className="container mx-auto flex justify-between m-4 flex-col md:flex-row md:w-80">
+                    <p className="bg-slate-400 p-4 text-left mb-2 md:mb-0 rounded md:mr-2 md:grow">{props.password}</p>
                     <button className="text-white bg-orange-400 p-2 rounded" onClick={copyHandler}>{buttonState}</button>
                 </div>
             </div>

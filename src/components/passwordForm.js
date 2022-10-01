@@ -51,7 +51,7 @@ const PasswordForm = (props) => {
                     className="container mx-auto w-80 relative font-mono text-lg"
                     onSubmit={submitHandler}
                     >
-                    <div className="flex flex-row justify-between mb-7">
+                    <div className="flex flex-row justify-between items-center mb-7">
                         <input 
                             type="number"
                             id="passwordLength"

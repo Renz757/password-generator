@@ -19,8 +19,8 @@ function App() {
 
   
   return (
-    <div className="App h-screen mx-auto bg-zinc-700 relative">
-      <div className='bg-emerald-700 relative top-40 w-9/12 mx-auto p-7'>
+    <div className="App h-screen mx-auto bg-zinc-700 relative box-border">
+      <div className='bg-emerald-700 relative top-40 mx-auto p-7 box-border sm:w-min md:w-9/12'>
         <CopyPassword password={password}/> 
         <PasswordForm onSaveFormData={saveFormDataHandler}/>
       </div>

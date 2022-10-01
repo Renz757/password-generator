@@ -25,7 +25,10 @@ export const newPassword = passwordLimits => {
 
     //if no option is selected 
     if (listOfCharacters === '') {
-        return <p className="text-rose-700">Invalid Selection</p>
+        return (
+        <>
+            <p className="text-rose-700">Invalid Selection</p> 
+        </>); 
     }
 
     return password; 
